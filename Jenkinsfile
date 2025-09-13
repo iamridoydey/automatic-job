@@ -8,5 +8,10 @@ pipeline {
         sh 'node --version'
       }
     }
+    stage('Production') {
+      steps {
+        sh 'echo "Hello, World"'
+      }
+    }
   }
 }
